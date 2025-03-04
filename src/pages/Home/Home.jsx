@@ -1,9 +1,9 @@
 import React from "react";
 import "./Home.css";
-import Navbar from "D:/Akash/PROJECT/ByteForge/byteforge-frontend/src/components/Shared/Navbar.jsx";
-import Header from "D:/Akash/PROJECT/ByteForge/byteforge-frontend/src/components/Shared/Header";
-import Footer from "D:/Akash/PROJECT/ByteForge/byteforge-frontend/src/components/Shared/Footer";
-import Sidebar from "D:/Akash/PROJECT/ByteForge/byteforge-frontend/src/components/Shared/Sidebar";
+import Navbar from "D:/Akash/PROJECT/byteforge-frontend/src/components/Shared/Navbar.jsx";
+import Header from "D:/Akash/PROJECT/byteforge-frontend/src/components/Shared/Header";
+import Footer from "D:/Akash/PROJECT/byteforge-frontend/src/components/Shared/Footer";
+import Sidebar from "D:/Akash/PROJECT/byteforge-frontend/src/components/Shared/Sidebar";
 
 const Home = () => {
   const [isDarkMode, setIsDarkMode] = React.useState(false);
