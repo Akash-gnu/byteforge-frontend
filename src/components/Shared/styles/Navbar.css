@@ -95,6 +95,7 @@ body {
   cursor: pointer;
   border: none;
   font-weight: 500;
+  transition: background 0.3s, color 0.3s;
 }
 
 .sign-up {
@@ -102,9 +103,19 @@ body {
   color: black;
 }
 
+.sign-up:hover {
+  background-color: #be775a;
+  color: #000;
+}
+
 .log-in {
   background-color: #f0f0f0;
   color: black;
+}
+
+.log-in:hover {
+  background-color: #be775a;
+  color: #000;
 }
 
 /* Theme Toggle */

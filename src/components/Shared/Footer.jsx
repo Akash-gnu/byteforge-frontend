@@ -20,31 +20,31 @@ const Footer = () => {
               <i className="fas fa-phone"></i> &nbsp; 123-456-789
             </span>
             <span>
-              <i className="fas fa-envelope"></i> &nbsp;
+              <i className="fas fa-envelope"></i> &nbsp; support@byteforge.com
             </span>
           </div>
         </div>
+
         <div className="footer-section links">
           <h2>Quick Links</h2>
-          <br />
           <ul>
-            <Link to="/about">
-              <li>About Us</li>
-            </Link>
-            <Link to="/contact">
-              <li>Contact Us</li>
-            </Link>
-            <Link to="/privacy-policy">
-              <li>Privacy Policy</li>
-            </Link>
-            <Link to="/terms-of-service">
-              <li>Terms of Service</li>
-            </Link>
+            <li>
+              <Link to="/about">About Us</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact Us</Link>
+            </li>
+            <li>
+              <Link to="/privacy-policy">Privacy Policy</Link>
+            </li>
+            <li>
+              <Link to="/terms-of-service">Terms of Service</Link>
+            </li>
           </ul>
         </div>
+
         <div className="footer-section contact-form">
           <h2>Contact Us</h2>
-          <br />
           <form action="index.html" method="post">
             <input
               type="email"
@@ -66,9 +66,10 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        &copy; ByteForge | Designed by Group 5
+        &copy; {new Date().getFullYear()} ByteForge | Designed by Group 5
       </div>
     </footer>
   );
 };
+
 export default Footer;

@@ -6,7 +6,6 @@ const Header = () => {
     <header className="header">
       <h1>Welcome to ByteForge</h1>
     </header>
-    
   );
 };
 

@@ -9,16 +9,16 @@ body {
   font-family: Arial, sans-serif;
   background-color: #1e1e1e;
   color: white;
+  text-align: center; /* Centers the header text */
 }
 
 .header {
-  background-color: #2a2a2a;
-  color: white;
   padding: 20px 0;
-  text-align: center;
+  margin-top: -2700px; /* Moves the text slightly higher */
 }
 
 .header h1 {
   font-size: 36px;
   margin: 0;
+  color: inherit; /* Adapts to light/dark mode */
 }
