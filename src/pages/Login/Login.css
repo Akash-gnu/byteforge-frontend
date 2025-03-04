@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 350px;
+  padding: 25px;
+  color: #e0e0e0;
+}
+
+.logo {
+  text-align: center;
+  /* margin-bottom: 25px; */
+}
+
+.logo h1 {
+  color: #4285f4;
+  font-size: 24px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #e0e0e0;
+  font-size: 18px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #bbbbbb;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #333333;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #4285f4;
+  outline: none;
+}
+
+.error-message {
+  color: #ff5252;
+  font-size: 12px;
+  margin-top: 5px;
+  display: none;
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+}
+
+.remember-me input {
+  margin-right: 5px;
+}
+
+.forgot-password a {
+  color: #4285f4;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary {
+  background-color: #4285f4;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #3367d6;
+}
+
+.or-divider {
+  text-align: center;
+  margin: 15px 0;
+  position: relative;
+}
+
+.or-divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #444444;
+}
+
+.or-divider span {
+  position: relative;
+  background-color: #1e1e1e;
+  padding: 0 10px;
+  color: #999999;
+  font-size: 13px;
+}
+
+.social-login {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.social-btn {
+  flex: 1;
+  padding: 8px 0;
+  border: 1px solid #333333;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0 3px;
+  font-size: 13px;
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+}
+
+.social-btn:hover {
+  background-color: #333333;
+}
+
+.social-btn i {
+  margin-right: 6px;
+}
+
+.social-btn.google i {
+  color: #db4437;
+}
+
+.social-btn.facebook i {
+  color: #4267b2;
+}
+
+.social-btn.apple i {
+  color: #fff;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #bbbbbb;
+}
+
+.signup-link a {
+  color: #4285f4;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+/*make it responsive for all devices */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 15px;
+  }
+
+  .logo h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  .input-group label {
+    font-size: 13px;
+  }
+
+  .input-group input {
+    font-size: 13px;
+  }
+
+  .error-message {
+    font-size: 11px;
+  }
+
+  .remember-forgot {
+    font-size: 12px;
+  }
+
+  .btn {
+    font-size: 13px;
+  }
+
+  .or-divider span {
+    font-size: 12px;
+  }
+
+  .social-btn {
+    font-size: 12px;
+  }
+
+  .signup-link {
+    font-size: 12px;
+  }
+}
