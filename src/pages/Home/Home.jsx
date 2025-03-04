@@ -22,6 +22,7 @@ const Home = () => {
         <Header />
         <div className="content">
           <h2>Home Page</h2>
+          <h2>Home Page</h2>
           <p>
             Welcome to ByteForge! This is a platform where you can learn to
             code, practice coding, and earn certificates. We offer a variety of
