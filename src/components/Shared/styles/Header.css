@@ -1,3 +1,4 @@
+/* Footer.css */
 * {
   margin: 0;
   padding: 0;
@@ -7,18 +8,124 @@
 
 body {
   font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body.dark-mode {
   background-color: #1e1e1e;
   color: white;
-  text-align: center; /* Centers the header text */
 }
 
-.header {
-  padding: 20px 0;
-  margin-top: -2700px; /* Moves the text slightly higher */
+.main-content {
+  flex: 1;
 }
 
-.header h1 {
-  font-size: 36px;
-  margin: 0;
-  color: inherit; /* Adapts to light/dark mode */
+.footer {
+  background-color: #f5f5f5;
+  color: black;
+  padding: 30px 0;
+  text-align: center;
+  width: 100%;
+  position: relative; /* Changed from fixed */
+  bottom: 0;
+  left: 0;
+}
+
+body.dark-mode .footer {
+  background-color: #2a2a2a;
+  color: white;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+  text-align: left;
+}
+
+.footer-section.about p {
+  color: #666; /* Added to improve readability */
+  line-height: 1.6; /* Improved line height */
+}
+
+.footer-section ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section.links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  background-color: #e0e0e0;
+  padding: 10px 0;
+}
+
+body.dark-mode .footer-bottom {
+  background-color: #222;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  color: black;
+}
+
+body.dark-mode .contact-form input, 
+body.dark-mode .contact-form textarea {
+  background-color: #333;
+  color: white;
+  border-color: #555;
+}
+
+.contact-form button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+}
+
+.contact-form button:hover {
+  background-color: #357abd;
 }

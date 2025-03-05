@@ -16,12 +16,8 @@ const Footer = () => {
             coding.
           </p>
           <div className="contact">
-            <span>
-              <i className="fas fa-phone"></i> &nbsp; 123-456-789
-            </span>
-            <span>
-              <i className="fas fa-envelope"></i> &nbsp; support@byteforge.com
-            </span>
+            <p>123-456-789</p>
+            <p>support@byteforge.com</p>
           </div>
         </div>
 
@@ -45,28 +41,16 @@ const Footer = () => {
 
         <div className="footer-section contact-form">
           <h2>Contact Us</h2>
-          <form action="index.html" method="post">
-            <input
-              type="email"
-              name="email"
-              className="text-input contact-input"
-              placeholder="Your email address..."
-            />
-            <textarea
-              name="message"
-              className="text-input contact-input"
-              placeholder="Your message..."
-            ></textarea>
-            <button type="submit" className="btn btn-big">
-              <i className="fas fa-envelope"></i>
-              Send
-            </button>
+          <form>
+            <input type="email" placeholder="Your email address..." />
+            <textarea placeholder="Your message..."></textarea>
+            <button type="submit">Send</button>
           </form>
         </div>
       </div>
 
       <div className="footer-bottom">
-        &copy; {new Date().getFullYear()} ByteForge | Designed by Group 5
+        © {new Date().getFullYear()} ByteForge | Designed by Group 5
       </div>
     </footer>
   );

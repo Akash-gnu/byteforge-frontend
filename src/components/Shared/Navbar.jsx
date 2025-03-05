@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/Navbar.css";
-import lightlogo from "../../assets/img/ByteForge-logo.png";
-import darklogo from "../../assets/img/ByteForge-logoindark.png";
+import lightlogo from "../../assets/img/ByteForge-logoindark.png";
+import darklogo from "../../assets/img/ByteForge-logo.png";
 
 const Navbar = ({ isDarkMode, toggleTheme }) => {
   return (
